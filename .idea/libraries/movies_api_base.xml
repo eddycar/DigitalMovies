@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="movies-api-base">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/movies-api-base.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,43 @@
+server:
+  port: 8086
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+dh:
+  keycloak:
+    serverUrl: http://localhost:8082/
+    realm: DigitalMedia
+    clienId: internal
+
+spring:
+  application:
+    name: users-service
+#  security:
+#    oauth2:
+#      resourceserver:
+#        jwt:
+#          issuer-uri: http://localhost:8082/realms/DigitalMedia
+#          jwk-set-uri: http://localhost:8082/realms/DigitalMedia/protocol/openid-connect/certs
+#      client:
+#        registration:
+#          keycloak:
+#            authorizationGrantType: client_credentials
+#            clientId: internal
+#        provider:
+#          keycloak:
+#            tokenUri: http://localhost:8082/realms/DigitalMedia/protocol/openid-connect/token
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      password: example
+      username: root
+      authentication-database: admin
+      database: moviesdb
+  main:
+    allow-circular-references: true
+
